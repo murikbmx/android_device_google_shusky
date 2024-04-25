@@ -16,6 +16,15 @@
 */
 -->
 <resources>
+    <!-- Don't need the left side padding due to being inset from the cutout -->
+    <dimen name="status_bar_padding_start">-13dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">-5dp</dimen>
+
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">1dp</dimen>
+    
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">698px</dimen>
 
