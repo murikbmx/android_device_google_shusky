@@ -14,6 +14,9 @@ $(call inherit-product, device/google/zuma/lineage_common.mk)
 
 include device/google/shusky/shiba/device-lineage.mk
 
+#Gapps
+include vendor/gapps/arm64/arm64-vendor.mk
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8
