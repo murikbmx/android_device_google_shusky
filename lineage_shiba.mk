@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+#Gapps
+include vendor/gapps/arm64/arm64-vendor.mk
+
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
