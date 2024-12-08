@@ -43,7 +43,7 @@ USES_DEVICE_GOOGLE_SHUSKY := true
 BOARD_KERNEL_CMDLINE += swiotlb=noforce
 BOARD_KERNEL_CMDLINE += disable_dma32=on
 
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/system.prop
+#TARGET_SYSTEM_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/system.prop
 
 include device/google/shusky/BoardConfig-shusky-common.mk
 include device/google/shusky/device-shusky-common.mk
