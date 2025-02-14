@@ -4,8 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-#Gapps
-include vendor/gapps/arm64/arm64-vendor.mk
+# Conditionally inherit GMS makefiles
+ifneq ("$(wildcard vendor/gapps/arm64/arm64-vendor.mk)", "")
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
