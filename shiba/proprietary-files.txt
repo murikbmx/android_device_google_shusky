@@ -33,6 +33,10 @@ product/etc/permissions/com.google.android.hardwareinfo.xml
 product/framework/libhwinfo.jar
 product/priv-app/HardwareInfo/HardwareInfo.apk;PRESIGNED
 
+# Hotword
+product/priv-app/HotwordEnrollmentOKGoogleFUSIONPro/HotwordEnrollmentOKGoogleFUSIONPro.apk;PRESIGNED
+product/priv-app/HotwordEnrollmentXGoogleFUSIONPro/HotwordEnrollmentXGoogleFUSIONPro.apk;PRESIGNED
+
 # IMS
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 
@@ -70,8 +74,12 @@ product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 product/priv-app/TetheringEntitlement/TetheringEntitlement.apk
 
 # VZW
+product/app/VZWAPNLib/VZWAPNLib.apk;PRESIGNED
 product/etc/permissions/com.android.omadm.service.xml
 product/etc/permissions/com.google.omadm.trigger.xml
+product/etc/permissions/com.verizon.apn.xml
+product/etc/permissions/com.verizon.services.xml
+product/etc/permissions/features-verizon.xml
 product/etc/sysconfig/allowlist_com.android.omadm.service.xml
 product/priv-app/AppDirectedSMSService/AppDirectedSMSService.apk;PRESIGNED
 product/priv-app/OemDmTrigger/OemDmTrigger.apk
@@ -115,6 +123,10 @@ system_ext/etc/public.libraries-google.txt
 system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml
 system_ext/lib64/com.google.edgetpu_app_service-V4-ndk.so
 system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
+
+# Hotword
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # IMS
 system_ext/etc/permissions/com.android.qns.xml
@@ -164,3 +176,7 @@ system_ext/etc/permissions/com.samsung.slsi.telephony.oemril.xml
 system_ext/etc/permissions/oemrilhook.xml
 system_ext/framework/oemrilhook.jar
 system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
+
+# VZW
+system_ext/etc/permissions/vzw_mvs_permissions.xml
+system_ext/priv-app/MyVerizonServices/MyVerizonServices.apk;PRESIGNED
