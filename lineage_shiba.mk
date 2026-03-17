@@ -7,6 +7,14 @@
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Conditionally inherit GMS makefiles
+ifneq ("$(wildcard vendor/gapps/arm64/arm64-vendor.mk)", "")
+$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+endif
+
+# Google Camera
+$(call inherit-product-if-exists, vendor/google/camera/config.mk)
+
 # Inherit device configuration
 DEVICE_CODENAME := shiba
 DEVICE_PATH := device/google/shusky
