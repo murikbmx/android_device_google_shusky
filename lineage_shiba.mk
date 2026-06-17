@@ -15,6 +15,9 @@ endif
 # Google Camera
 $(call inherit-product-if-exists, vendor/google/camera/config.mk)
 
+# Face unlock
+$(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
+
 # Inherit device configuration
 DEVICE_CODENAME := shiba
 DEVICE_PATH := device/google/shusky
