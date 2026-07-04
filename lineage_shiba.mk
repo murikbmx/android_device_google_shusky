@@ -7,6 +7,9 @@
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#MicroG
+WITH_GMS := true
+
 # Conditionally inherit GMS makefiles
 ifneq ("$(wildcard vendor/gapps/arm64/arm64-vendor.mk)", "")
 $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
