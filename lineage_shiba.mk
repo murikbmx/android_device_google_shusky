@@ -22,6 +22,10 @@ PRODUCT_SYSTEM_BRAND := google
 PRODUCT_SYSTEM_MANUFACTURER := Google
 PRODUCT_SYSTEM_NAME := generic_system_google
 
+# Battery ring around the front camera cutout (OLED screen)
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.lineage.battery_ring.supported=true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
