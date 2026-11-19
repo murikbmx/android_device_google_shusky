@@ -7,8 +7,9 @@
 # Inherit some common stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# MicroG
-WITH_GMS := true
+# gmscompat: no microG (sandboxed Google Play is installed by the user).
+# Keep partition sizing as with WITH_GMS.
+WITHOUT_RESERVED_SIZE := true
 
 # Inherit device configuration
 DEVICE_CODENAME := shiba
